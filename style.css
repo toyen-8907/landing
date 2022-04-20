@@ -1,0 +1,290 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.banner {
+
+    height:80vh;
+    min-height: 600px;
+    background-image: url('https://i.ibb.co/HNvHSyV/image-header.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height:60px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.menu{
+    display: flex;
+    font-size: 20px;
+    color:white;
+    /* 兩個div排序對齊 */
+    align-items: center;
+}
+.menu span{
+    margin-right: 30px;
+    cursor:pointer;
+}
+
+.contact{
+    background-color: white;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 15px;
+    /* 互動 */
+    cursor: pointer;
+    /* 延遲時間  */
+    transition: 0.258s all ease-in-out;
+}
+
+.contact:hover{
+    background-color: bisque;
+}
+
+.main{
+    display: flex;
+    /* 使用flex-direction 會改變align items&justify content的意義 */
+    flex-direction: column;
+    /* 箭頭縮小 */
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    flex-grow: 1;
+    color:white;
+    font-weight: bold;
+}
+
+.arrow{
+    margin-top: 60px;
+}
+
+.section1, .section3{
+    display: flex;
+    height:555px;
+}
+.section1 img,.section2 img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section1 .left, .section2 .left, .section3 .left, .section3 .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .text-container, .section2 .text-container{
+    width:70%;
+
+}
+
+.left h1{
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.left p{
+    color:#848391;
+    line-height: 1.8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 16px;
+}
+.left, .right{
+    flex: 1;
+}
+
+.left div img{
+    width: 150px;
+}
+
+.left .button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.section2{
+    display: flex;
+    flex-direction: row-reverse;
+    height:555px;
+}
+.left img, .right img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.client-image{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.client-image img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffbf8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height:400px;
+}
+.testimonials h1{
+    color: #A0A1A2;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.clients{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.clients .client{
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    align-items: center;
+}
+
+.client .client-image{
+    margin-bottom: 16px;
+}
+
+.client p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.client .details{
+    text-align: center;
+}
+
+.client h4{
+    color: #A0A1A2;
+    margin-top: 10px;
+}
+
+.section4-images{
+    display: flex;
+}
+
+/* .section4-images img{
+    flex:0.25;
+    width: 100%;
+} */
+.section4-images div{
+    flex: 0.25;
+}
+
+.section4-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.footer{
+    background-color: #90D4C5;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+.footer .logo{
+    margin-top: 50px;
+    color:#2D7465;
+}
+
+.footer-navi{
+    margin-top: 50px;
+    color: #4f9485;
+    font-weight: bold;
+}
+
+.footer-navi span{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer-navi span:hover{
+    color: #2D7465;
+}
+
+.footer .social-med{
+    margin-top: 50px;
+
+}
+
+.social-med img{
+   padding: 4px;
+}
+
+.section6{
+    background-color: #2D7465;
+}
+
+@media (max-width:575.98px){
+    .section1,.section3{
+        height: 100%;
+        flex-direction: column;
+    }
+    .section1 .left,.section2 .left{
+        padding-bottom: 30px;
+        padding-top:30px;
+    }
+    .section2{
+        flex-direction: column-reverse;
+        height:100%;
+    }
+    .section4-images div{
+        flex: 0.5;
+        flex-basis: 50%;
+    }
+    .section4-images{
+        flex-wrap: wrap;
+    }
+    .clients{
+        flex-direction: column;
+    }
+    .clients .client{
+        margin-bottom: 100px;
+    }
+    .testimonials{
+        height: auto;
+    }
+    .testimonials h1{
+        padding-bottom: 30px;
+    }
+    .main{
+        text-align: left;
+        font-size: 60px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+}
